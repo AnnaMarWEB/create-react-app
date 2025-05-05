@@ -20,7 +20,9 @@
     "test": "cd packages/react-scripts && node bin/react-scripts.js test",
     "eslint": "eslint .",
     "prettier": "prettier .",
-    "format": "npm run prettier -- --write"
+    "format": "npm run prettier -- --write",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.15.1",
